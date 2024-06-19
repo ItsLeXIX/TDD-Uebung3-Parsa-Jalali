@@ -17,8 +17,8 @@ var items = [
 
 function update_quality() {
   items.forEach(item => {
-    updateItemQuality(item);
     updateItemSellIn(item);
+    updateItemQuality(item);
   });
 }
 
