@@ -12,4 +12,10 @@ describe("Gilded Rose", function() {
     expect(items[0].quality).toEqual(3);
   });
   
-});
+  it("should not decrease quality below 0", function() {
+    items = [ new Item("foo", 5, 0) ];
+    update_quality();
+    expect(items[0].quality).toEqual(0);
+  });
+
+}); 
