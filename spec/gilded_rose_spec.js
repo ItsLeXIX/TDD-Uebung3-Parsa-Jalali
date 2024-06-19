@@ -6,4 +6,6 @@ describe("Gilded Rose", function() {
     expect(items[0].name).toEqual("foo");
   });
 
+  
+  
 });
